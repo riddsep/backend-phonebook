@@ -14,7 +14,7 @@ mongoose.connect(url);
 
 const personSchema = new mongoose.Schema({ name: String, number: String });
 
-const Person = mongoose.model("Persons", personSchema);
+const Person = mongoose.model("Person", personSchema);
 
 const person = new Person({ name: process.argv[3], number: process.argv[4] });
 
